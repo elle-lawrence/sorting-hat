@@ -22,7 +22,11 @@ const houseArray = [
     }
 ];
 
-let randomHouse = houseArray[Math.floor(Math.random() * houseArray.length)];
+const sortHouse = () => {
+    let randomHouse = houseArray[Math.floor(Math.random() * houseArray.length)];
+    return randomHouse
+}
+
 
 const renderToDom = (divId, textToPrint) => {
     const selectedDiv = document.querySelector(divId);
@@ -44,8 +48,8 @@ const buildForm = ("click", function (){
     <div id="newDivForm">
     <form id="nameFormForm">
     <div class="mb-3">
-    <label for="name" class="form-label">Name</label>
-    <input required type="text" class="form-control" id="name">
+    <label for="name"class="form-label">Name</label>
+    <input required type="text"  placeholder="Luna Lovegood" class="form-control" id="name">
     </div>
     <button type="submit" id="submit-btn" class="btn btn-primary">Submit</button>
     </form>
@@ -63,18 +67,17 @@ const studentArray = []
 
 const handleFormSubmit = (event) => {
     event.preventDefault();
-
+    const {houseName, imageUrl} = sortHouse()
      let addStudent = {
       name: document.querySelector("#name").value,
-      house: randomHouse.houseName,
-      imageUrl: randomHouse.imageUrl
+      house: houseName,
+      imageUrl: imageUrl
     };
 
     studentArray.push(addStudent);
     addCardToDom(studentArray);
 
-    document.querySelector("#name").reset
-    
+    document.querySelector("#nameFormForm").reset 
 
 }
 
@@ -90,7 +93,7 @@ const buttonEvents = () => {
     document
       .querySelector("#start-button")
       .addEventListener("click", btnClickEvent);
-
+    
       document.querySelector("#first-yr-div").addEventListener("click", expellStudent);
   };
 
@@ -116,15 +119,15 @@ const addCardToDom= (array) => {
 
 let voldyArmy = []
 
-const addExpellCardToDom= (array) => {
+const addExpellCardToDom = (array) => {
     let expellCard = ""
     array.forEach((obj) => {
     expellCard += 
     `<div class="card" style="width: 18rem;">
-    <img src=${obj.imageUrl} class="card-img-top" alt="${obj.house}">
+    <img src="https://static2.srcdn.com/wordpress/wp-content/uploads/2017/12/Voldemort-and-the-Death-Eaterss.jpg" class="card-img-top" alt="${obj.house}">
     <div class="card-body">
-        <h5 class="card-title">${obj.house}!</h5>
-        <p class="card-text">${obj.name}</p>
+        <h5 class="card-title">Dark days are upon us!</h5>
+        <p class="card-text">Sadly, <strong>${obj.name}</strong> has gone to the darkside.</p>
     </div>
     </div>`;
     })
@@ -138,12 +141,10 @@ const expellStudent = (event) => {
     const targetType = event.target.type
 
     if (targetType === "button") {
-        let expelledStudent = studentArray.splice(targetId, 1)
+        voldyArmy.push(studentArray.splice(targetId, 1)[0])      
         addCardToDom(studentArray)
-        voldyArmy += expellStudent
- 
+        addExpellCardToDom(voldyArmy)
     }
-    console.log(voldyArmy)
 }
 
 const onit = () => {
