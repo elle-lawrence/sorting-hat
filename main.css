@@ -1,0 +1,24 @@
+body {
+    background-color: bisque;
+}
+
+header {
+    text-align: center;
+}
+
+.start-btn-container {
+    display: flex;
+    justify-content: center;
+}
+
+.first-yr {
+    border: solid black 1px;
+    width: 50%;
+    padding: 10%;
+    margin: 10px;
+}
+
+#form-control {
+    width: 80%;
+    margin: 20px;
+}
