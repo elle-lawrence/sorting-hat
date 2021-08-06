@@ -1,9 +1,29 @@
 body {
-    background-color: bisque;
+    background-color: rgb(75, 63, 55);
+    font-family: 'Open Sans', sans-serif;
+    background-image: url(http://designyoutrust.com/wp-content/uploads/2011/10/1248.jpg?width=500);
+    background-repeat: no-repeat;
+    background-blend-mode: lighten;
+    background-position: 50% 50%;
+    background-size: cover;
 }
 
 header {
     text-align: center;
+}
+
+h1 {
+    font-family: 'Jim Nightshade', cursive;
+    font-size: 150px;
+    color: rgb(235, 193, 27);
+    text-shadow:  rgb(53, 57, 53) 5px 5px 2px;
+}
+
+.intro {
+    padding-left: 10%;
+    padding-right: 10%;
+    color: whitesmoke;
+    text-shadow: rgb(53, 57, 53) 2px 2px 1px;
 }
 
 .start-btn-container {
@@ -11,25 +31,95 @@ header {
     justify-content: center;
 }
 
-.first-yr {
-    display: inline;
-    float: left;
+.welcomebtn {
+    background-color: rgb(53, 57, 53);
+    border-color: rgb(53, 57, 53);
+}
+
+button.welcomebtn:hover{
+    background-color: rgb(53, 57, 53);
+    border-color: whitesmoke;;
+}
+
+div.instructions+p {
+    margin-bottom: 10px;
+}
+
+.sorting-hat {
+    display: block;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+.container-div{
+    display: flex;
+    padding: 20px;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+/* First Year Cards & divs */
+.header-div {
     border: solid black 3px;
     width: 45%;
-    padding: 10%;
+    min-height: 200px;
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+}
+
+.first-yr {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+/* all cards */
+div.card{
     margin: 10px;
+    flex-basis: 28%;
+}
+
+.card-body {
+    text-align: center;
+}
+
+.voldy-card {
+    background-color: #212529;
+    color: whitesmoke;
+}
+
+/* Voldy divs */
+
+.voldy-container{
+    border: solid black 3px;
+    width: 45%;
+    min-height: 50%;
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px
 }
 
 .voldy {
-    display: inline;
-    float: right;
-    border: solid black 3px;
-    width: 45%;
-    padding: 10%;
-    margin: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
-#form-control {
+h3 {
+    text-shadow: rgb(182, 180, 180) 1px 1px 1px;
+
+}
+
+/* form css */
+div.mb3 {
     width: 80%;
     margin: 20px;
+}
+
+.instructions{
+    font-weight: bolder;
+    font-size: large;
 }

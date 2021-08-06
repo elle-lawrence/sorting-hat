@@ -44,8 +44,13 @@ const welcomebtn = () => {
 
 const buildForm = ("click", function (){
     const nameForm =`
-    
-    <div id="newDivForm">
+    <div class="instructions">
+    <p>This is the sorting hat.</p>
+    <img class="sorting-hat" src="https://assets.mugglenet.com/wp-content/uploads/2020/05/The-Sorting-Hat.png" alt="Sorting hat from Harry Potter"
+    <p>Listen carefully:
+    Enter your name in the box below, and the sorting hat decide your house</p>
+    </div>
+    <div id="newDivForm" class="form-design">
     <form id="nameFormForm">
     <div class="mb-3">
     <label for="name"class="form-label">Name</label>
@@ -59,7 +64,6 @@ const buildForm = ("click", function (){
     
     const formElement = document.querySelector("#newDivForm");
     formElement.addEventListener("submit", handleFormSubmit);
-
  
 })
 
@@ -77,7 +81,7 @@ const handleFormSubmit = (event) => {
     studentArray.push(addStudent);
     addCardToDom(studentArray);
 
-    document.querySelector("#nameFormForm").reset 
+    document.querySelector("#nameFormForm").reset() 
 
 }
 
@@ -103,7 +107,7 @@ const addCardToDom= (array) => {
     let houseCard = ""
     array.forEach((obj) => {
     houseCard += 
-    `<div class="card" style="width: 18rem;">
+    `<div class="card" style="width: 10rem;">
     <img src=${obj.imageUrl} class="card-img-top" alt="${obj.house}">
     <div class="card-body">
         <h5 class="card-title">${obj.house}!</h5>
@@ -123,9 +127,9 @@ const addExpellCardToDom = (array) => {
     let expellCard = ""
     array.forEach((obj) => {
     expellCard += 
-    `<div class="card" style="width: 18rem;">
+    `<div class="card" style="width: 10rem;">
     <img src="https://static2.srcdn.com/wordpress/wp-content/uploads/2017/12/Voldemort-and-the-Death-Eaterss.jpg" class="card-img-top" alt="${obj.house}">
-    <div class="card-body">
+    <div class="card-body voldy-card">
         <h5 class="card-title">Dark days are upon us!</h5>
         <p class="card-text">Sadly, <strong>${obj.name}</strong> has gone to the darkside.</p>
     </div>
