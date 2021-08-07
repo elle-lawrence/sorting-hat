@@ -18,7 +18,7 @@ git@github.com:elle-lawrence/sorting-hat.git
 - Voldermort's Army: Create a separate container of cards that hold the cards for students that have been expelled. These are styled differently from Hogwarts students.
 - Responsive design for smaller screens
 
-## Video Walkthrough of APP NAME 
+## Video Walkthrough of Sorting Hat
 https://www.loom.com/share/48e7265098244ed9b3ae92f8d6c263c4
 
 ## Relevant Links <!-- Link to all the things that are required outside of the ones that have their own section -->
