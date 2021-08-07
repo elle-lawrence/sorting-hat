@@ -3,22 +3,22 @@ const houseArray = [
     {
         houseName: "Gryffindor",
         houseId: 1,
-        imageUrl: "https://thenichollsworth.com/wp-content/uploads/2020/11/C0441055-AEE4-4C0D-8F43-A708DDEB6C3B-721x900.jpeg"
+        imageUrl: "https://rlv.zcache.com/harry_potter_gryffindor_lion_crest_classic_round_sticker-r9a9082c138ec425fb25f5e1abe1d6e79_0ugmp_8byvr_704.webp"
     },
     {   
         houseName: "Hufflepuff",
         houseId: 2,
-        imageUrl: "https://cdn.shopify.com/s/files/1/1541/8579/files/Hufflepuff-harry_potter_large.JPG?v=1491538917"
+        imageUrl: "https://rlv.zcache.com/harry_potter_hufflepuff_crest_with_badger_classic_round_sticker-r834d3d98ddb0487b9be53d3abbe0976e_0ugmp_8byvr_704.webp"
     },
     {
         houseName: "Ravenclaw",
         houseId: 3,
-        imageUrl: "https://static.wikia.nocookie.net/hogwartsahistory/images/e/ef/Ravenclaw-crest.jpg/revision/latest?cb=20100819014614"
+        imageUrl: "https://rlv.zcache.com/harry_potter_ravenclaw_crest_classic_round_sticker-rbe9d33cc986f484b9c55764a1acef348_0ugmp_8byvr_540.webp"
     },
     {
         houseName: "Slytherin",
         houseId: 4,
-        imageUrl: "https://cdn11.bigcommerce.com/s-ydriczk/images/stencil/1280x1280/products/88362/91127/Harry-Potter-Slytherin-Crest-Official-wall-mounted-cardboard-cutout-buy-now-at-star__31920.1507640618.jpg?c=2"
+        imageUrl: "https://rlv.zcache.com/harry_potter_slytherin_crest_classic_round_sticker-r4da2fd21b87f44a3898cf6c3d996b9f5_0ugmp_8byvr_704.webp"
     }
 ];
 
@@ -45,13 +45,13 @@ const welcomebtn = () => {
 const buildForm = ("click", function (){
     const nameForm =`
     <div class="instructions">
-    <p>This is the sorting hat.</p>
-    <img class="sorting-hat" src="https://assets.mugglenet.com/wp-content/uploads/2020/05/The-Sorting-Hat.png" alt="Sorting hat from Harry Potter"
-    <p>Listen carefully:
+    <p class="this-is-sorting-hat">This is the sorting hat.</p>
+    <img class="sorting-hat" src="https://assets.mugglenet.com/wp-content/uploads/2020/05/The-Sorting-Hat.png" alt="Sorting hat from Harry Potter" width="300" height="200">
+    <p class="how-to">Listen carefully:
     Enter your name in the box below, and the sorting hat decide your house</p>
     </div>
     <div id="newDivForm" class="form-design">
-    <form id="nameFormForm">
+    <form id="nameFormForm" class="form-design-new">
     <div class="mb-3">
     <label for="name"class="form-label">Name</label>
     <input required type="text"  placeholder="Luna Lovegood" class="form-control" id="name">
@@ -112,7 +112,7 @@ const addCardToDom= (array) => {
     <div class="card-body">
         <h5 class="card-title">${obj.house}!</h5>
         <p class="card-text">${obj.name}</p>
-        <button type="button" class="btn btn-primary">Delete</button>
+        <button type="button" class="btn btn-primary">Expell</button>
     </div>
     </div>`;
     })
