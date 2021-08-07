@@ -1,9 +1,8 @@
-# The Sorting Hat Project [![Netlify Status](https://api.netlify.com/api/v1/badges/4ab7e730-7ed3-4cfd-a988-66195e79a991/deploy-status)](https://app.netlify.com/sites/drt-sortinghat/deploys)
-<!-- update the netlify badge above with your own badge that you can find at netlify under settings/general#status-badges -->
+# The Sorting Hat Project [![Netlify Status](https://api.netlify.com/api/v1/badges/07510251-39a9-46b7-b118-e190bf559296/deploy-status)](https://app.netlify.com/sites/elles-sorting-hat-project/deploys)
 
 This project is a single page application with CRUD components. For practice on writing dynamic JS code that takes inputs via form and creates components with styling based on conditionals.
 
-[View App](#your-link)
+[View App](https://elles-sorting-hat-project.netlify.app/)
 
 ## Get Started 
 git@github.com:elle-lawrence/sorting-hat.git
@@ -19,15 +18,15 @@ git@github.com:elle-lawrence/sorting-hat.git
 - Voldermort's Army: Create a separate container of cards that hold the cards for students that have been expelled. These are styled differently from Hogwarts students.
 - Responsive design for smaller screens
 
-## Video Walkthrough of APP NAME <!-- A loom link is sufficient -->
-https://www.loom.com/share/829b90d831ea441ba2db6bea724af210
+## Video Walkthrough of Sorting Hat
+https://www.loom.com/share/48e7265098244ed9b3ae92f8d6c263c4
 
 ## Relevant Links <!-- Link to all the things that are required outside of the ones that have their own section -->
-- [Check out the deployed site](#your-link)
+- [Check out the deployed site](https://elles-sorting-hat-project.netlify.app/)
 - [Wireframes](https://www.figma.com/proto/W1wiUdZ631HOAJYhgaAByn/Sorting-Hat?node-id=2%3A2)
 - [Project Board](https://github.com/elle-lawrence/sorting-hat/projects/2)
 
-## Code Snippetg
+## Code Snippet
 let voldyArmy = []
 
 const addExpellCardToDom = (array) => {
