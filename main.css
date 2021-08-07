@@ -1,9 +1,29 @@
 body {
-    background-color: bisque;
+    background-color: rgb(75, 63, 55);
+    font-family: 'Open Sans', sans-serif;
+    background-image: url(http://designyoutrust.com/wp-content/uploads/2011/10/1248.jpg?width=500);
+    background-repeat: no-repeat;
+    background-blend-mode: lighten;
+    background-position: 50% 50%;
+    background-size: cover;
 }
 
 header {
     text-align: center;
+}
+
+h1 {
+    font-family: 'Jim Nightshade', cursive;
+    font-size: 150px;
+    color: rgb(235, 193, 27);
+    text-shadow:  rgb(53, 57, 53) 5px 5px 2px;
+}
+
+.intro {
+    padding-left: 10%;
+    padding-right: 10%;
+    color: whitesmoke;
+    text-shadow: rgb(53, 57, 53) 2px 2px 3px;
 }
 
 .start-btn-container {
@@ -11,25 +31,173 @@ header {
     justify-content: center;
 }
 
-.first-yr {
-    display: inline;
-    float: left;
+.welcomebtn {
+    background-color: rgb(53, 57, 53);
+    border-color: rgb(53, 57, 53);
+}
+
+button.welcomebtn:hover{
+    background-color: rgb(53, 57, 53);
+    border-color: whitesmoke;
+}
+
+.sorting-hat {
+    display: block;
+    margin: auto;
+    margin-bottom: 10px;
+    border-radius: 150px;
+    border: rgb(53, 52, 52) solid 3px;
+    box-shadow: rgb(54, 54, 54) 5px 5px 10px;
+    
+}
+
+.container-div{
+    display: flex;
+    padding: 20px;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+
+/* First Year Cards & divs */
+.header-div {
     border: solid black 3px;
     width: 45%;
-    padding: 10%;
+    min-height: 200px;
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    background-color: rgba(56, 33, 7, 0.5)
+}
+
+.first-yr {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+/* all cards */
+div.card{
     margin: 10px;
+    flex-basis: 28%;
+}
+
+.card-body {
+    text-align: center;
+    background-color: rgb(226, 224, 228);
+}
+
+.card-title {
+    font-family: 'Jim Nightshade', cursive;
+    font-size: 29px;
+}
+
+.voldy-card {
+    background-color: #212529;
+    color: whitesmoke;
+}
+
+/* Voldy divs */
+
+.voldy-container{
+    border: solid black 3px;
+    width: 45%;
+    min-height: 50%;
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    background-color: rgba(56, 33, 7, 0.5);
 }
 
 .voldy {
-    display: inline;
-    float: right;
-    border: solid black 3px;
-    width: 45%;
-    padding: 10%;
-    margin: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
-#form-control {
-    width: 80%;
-    margin: 20px;
+h3 {
+    text-shadow: rgb(236, 222, 196) 1px 1px 3px;
+
+}
+
+/* form css */
+.this-is-sorting-hat {
+    color: whitesmoke;
+    text-shadow: rgb(54, 54, 54)  1px 1px 2px;
+    font-weight: bolder;
+    font-size: larger;
+}
+
+.instructions{
+    font-weight: bolder;
+    font-size: large;
+}
+
+.how-to{
+    color: whitesmoke;
+    text-shadow: rgb(54, 54, 54)  1px 1px 2px;
+}
+
+.form-div-css {
+    margin-left: 20%;
+    margin-right: 20%;
+    background-color: rgba(56, 33, 7, 0.5);
+    padding: 10px 50px 10px 50px;
+    border-radius: 10px;
+}
+
+.form-design {
+    color: whitesmoke;
+    border-radius: 10px;
+}
+
+.btn-primary{
+    background-color: rgb(53, 57, 53);
+    border-color: rgb(53, 57, 53);
+}
+
+.btn-primary:hover{
+    background-color: rgb(53, 57, 53);
+    border-color: whitesmoke;
+}
+
+@media screen and (max-width:600px) {
+    .container-div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: auto;
+    }
+
+    .header-div {
+            border: solid black 3px;
+            border-radius: 10px;
+            background-color: rgba(56, 33, 7, 0.5);
+            padding: 5px;
+            width: 80%;
+    }
+
+    div.card {
+        margin: 0px;
+        flex-basis: 100%;
+    }
+
+    .form-div-css {
+        margin-left: 2%;
+        margin-right: 2%;
+        background-color: rgba(56, 33, 7, 0.5);
+        padding: 5px
+        border-radius: 10px;
+    }
+
+    .voldy-container{
+            border: solid black 3px;
+            border-radius: 10px;
+            background-color: rgba(56, 33, 7, 0.5);
+            padding: 5px;
+            width: 80%;
+    }
 }
