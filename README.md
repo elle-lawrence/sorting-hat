@@ -26,7 +26,7 @@ https://www.loom.com/share/48e7265098244ed9b3ae92f8d6c263c4
 - [Wireframes](https://www.figma.com/proto/W1wiUdZ631HOAJYhgaAByn/Sorting-Hat?node-id=2%3A2)
 - [Project Board](https://github.com/elle-lawrence/sorting-hat/projects/2)
 
-## Code Snippetg
+## Code Snippet
 let voldyArmy = []
 
 const addExpellCardToDom = (array) => {
